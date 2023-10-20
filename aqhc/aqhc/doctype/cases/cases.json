@@ -1,0 +1,1160 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "autoname": "format:RDG{idcase}",
+ "color": "blue",
+ "creation": "2023-09-02 11:24:52.718333",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "done",
+  "section_break_cc0ik",
+  "idcase",
+  "paycode",
+  "\u062a\u0627\u0631\u064a\u062e_\u0627\u0644\u062a\u0633\u0644\u064a\u0645",
+  "sort",
+  "status",
+  "verificationexplan",
+  "column_break_v5iwi",
+  "childname",
+  "child_picture",
+  "childpdf",
+  "idfamily",
+  "role",
+  "casemanager",
+  "supervisor",
+  "lastupdate",
+  "idchild",
+  "idfather",
+  "idmother",
+  "section_break_mhh36",
+  "datebirthchild",
+  "gender",
+  "placestatus",
+  "hisplace",
+  "femaleheaded",
+  "hascard",
+  "typedisability",
+  "causedisability",
+  "educationstatuts",
+  "atanyclass",
+  "region",
+  "city",
+  "column_break_letij",
+  "recipientname1",
+  "relativerelation",
+  "idrn1",
+  "phonern1",
+  "recipientname2",
+  "idrn2",
+  "phonern2",
+  "caregiver",
+  "idcard",
+  "evidencedisabilty",
+  "district",
+  "tb_city2",
+  "neighborhood",
+  "address",
+  "section_break_etnzz",
+  "notecasemanager",
+  "notesupervisor",
+  "manager_note",
+  "tab_break_gelcc",
+  "mothername",
+  "mothercondition",
+  "motherage",
+  "motherwork",
+  "motherphone",
+  "column_break_h3xmx",
+  "fathername",
+  "fathercondition",
+  "fatherage",
+  "workfather",
+  "fatherphone",
+  "section_break_er9qw",
+  "familymember",
+  "section_break_no6or",
+  "familycondition",
+  "familyhouse",
+  "otherinformation",
+  "whogivecarde",
+  "childplacebirth",
+  "disiabiltyoncard",
+  "disabiltyexplain",
+  "severe",
+  "needhelp",
+  "grantdate",
+  "column_break_qb2qc",
+  "visitcheck",
+  "informed",
+  "caseevaluate",
+  "intervention",
+  "referrals",
+  "review",
+  "close",
+  "reasonclose",
+  "dateclose",
+  "column_break_hgthq",
+  "form0",
+  "form1",
+  "form2",
+  "form3",
+  "form4",
+  "form5",
+  "form6",
+  "form7",
+  "form8",
+  "form9",
+  "section_break_2wohk",
+  "story",
+  "addfile",
+  "section_break_ljfos",
+  "note_on_close",
+  "protection",
+  "pro_explain",
+  "column_break_mtm1m",
+  "v_physical",
+  "v_psycho",
+  "v_rape",
+  "v_pregnant",
+  "v_sexual",
+  "v_boom",
+  "v_marry",
+  "v_bullying",
+  "column_break_cw4h6",
+  "v_neglecting",
+  "v_drop_out",
+  "v_labour",
+  "v_nonexsit",
+  "v_street",
+  "v_trade",
+  "v_poor",
+  "section_break_mcjjw",
+  "is_he_married",
+  "what_care",
+  "who_ref",
+  "name_ref",
+  "column_break_druxm",
+  "orphan",
+  "disable",
+  "phone_ref",
+  "date_ref",
+  "section_break_qjfne",
+  "type_date_v",
+  "section_break_8a7ge",
+  "emergency_intervention",
+  "referrals_tab",
+  "referrals_table",
+  "visits",
+  "visits_table",
+  "section_break_3t0r7",
+  "report",
+  "money_tab",
+  "money",
+  "section_break_2ncps",
+  "money_note",
+  "count_money",
+  "sum_money",
+  "plan_tab",
+  "plan",
+  "section_break_goi4s",
+  "needs",
+  "evaluate_tab",
+  "ev_phyco",
+  "ev_love",
+  "ev_body",
+  "ev_social",
+  "ev_education",
+  "ev_doing",
+  "ev_total"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "done",
+   "fieldtype": "Check",
+   "label": "\u062a\u0645 \u062c\u0644\u0628 \u0627\u0644\u0645\u0644\u0641 \u0648\u0625\u0631\u0641\u0627\u0642\u0647"
+  },
+  {
+   "fieldname": "section_break_cc0ik",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "idcase",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u0633\u062a\u0641\u064a\u062f",
+   "length": 15,
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.\r\nrole\r\n!==\r\n\"123\";",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "paycode",
+   "fieldtype": "Data",
+   "label": "\u0643\u0648\u062f \u0627\u0644\u062a\u0633\u0644\u064a\u0645",
+   "length": 15,
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.\r\nrole\r\n!==\r\n\"123\";"
+  },
+  {
+   "fieldname": "\u062a\u0627\u0631\u064a\u062e_\u0627\u0644\u062a\u0633\u0644\u064a\u0645",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062a\u0633\u062c\u064a\u0644",
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.\r\nrole\r\n!==\r\n\"123\";"
+  },
+  {
+   "fieldname": "sort",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u062a\u0635\u0646\u064a\u0641",
+   "length": 5,
+   "options": "1\n1.1\n1.2\n1.3\n1.4\n1.5\n1.6\n1.7",
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.\r\nrole\r\n!==\r\n\"123\";",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Autocomplete",
+   "label": "\u0646\u062a\u064a\u062c\u0629 \u0627\u0644\u062a\u062d\u0642\u0642",
+   "length": 100,
+   "options": "\n\u0636\u0645\u0646\n\u062e\u0627\u0631\u062c \u0627\u0644\u0634\u0631\u0648\u0637\n\u0644\u0644\u062a\u0631\u064a\u062b\n\u0641\u0642\u062f\u0627\u0646 \u062a\u0648\u0627\u0635\u0644\n\u0644\u0644\u062a\u062d\u0642\u0642\n\u0648\u0641\u0627\u0629"
+  },
+  {
+   "fieldname": "verificationexplan",
+   "fieldtype": "Small Text",
+   "label": "\u0634\u0631\u062d \u0627\u0644\u062a\u062d\u0642\u0642"
+  },
+  {
+   "fieldname": "column_break_v5iwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "childname",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0637\u0641\u0644"
+  },
+  {
+   "fieldname": "child_picture",
+   "fieldtype": "Attach Image",
+   "label": "\u0635\u0648\u0631\u0629 \u0627\u0644\u0637\u0641\u0644"
+  },
+  {
+   "fieldname": "childpdf",
+   "fieldtype": "Attach",
+   "label": "\u0645\u0644\u0641 \u0627\u0644\u0637\u0641\u0644"
+  },
+  {
+   "fieldname": "idfamily",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u062f\u0641\u062a\u0631 \u0627\u0644\u0639\u0627\u0626\u0644\u0629"
+  },
+  {
+   "description": "\u0644\u0627 \u062a\u0636\u0639 \u0623\u064a \u0634\u064a\u0621 \u0647\u0646\u0627\u060c \u0641\u0642\u0637 \u0644\u0644\u0645\u062f\u064a\u0631 \u0648\u0627\u0644\u0645\u0634\u0631\u0641\u064a\u0646 \u0644\u0627\u062d\u0642\u0627\u064b",
+   "fieldname": "role",
+   "fieldtype": "Password",
+   "label": "\u0627\u0644\u0635\u0641\u0629 \u0627\u0644\u0648\u0638\u064a\u0641\u064a\u0629"
+  },
+  {
+   "fieldname": "lastupdate",
+   "fieldtype": "Date",
+   "label": "\u0622\u062e\u0631 \u062a\u0639\u062f\u064a\u0644"
+  },
+  {
+   "fieldname": "idchild",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0648\u0637\u0646\u064a \u0627\u0644\u0637\u0641\u0644"
+  },
+  {
+   "fieldname": "idfather",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "\u0648\u0637\u0646\u064a \u0627\u0644\u0623\u0628"
+  },
+  {
+   "fieldname": "idmother",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "\u0648\u0637\u0646\u064a \u0627\u0644\u0623\u0645"
+  },
+  {
+   "fieldname": "section_break_mhh36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "datebirthchild",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0645\u064a\u0644\u0627\u062f"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u062c\u0646\u0633",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "placestatus",
+   "fieldtype": "Autocomplete",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0633\u0643\u0646",
+   "options": "\nNever displaced/\u0644\u0645 \u062a\u0646\u0632\u062d \u0623\u0628\u062f\u0627\nIDP/\u0646\u0627\u0632\u062d\u0629\nReturnee from more than3 years/ \u0639\u0627\u0626\u062f\u0629 \u0645\u0646\u0630 \u0623\u0643\u062b\u0631 \u0645\u0646 3 \u0633\u0646\u0648\u0627\u062a\nReturnee in a year or less/ \u0639\u0627\u0626\u062f\u0629 \u0645\u0646 \u0633\u0646\u0629 \u0623\u0648 \u0623\u0642\u0644\nReturnee ]1-3 years]/ ]1-3 years] \u0639\u0627\u0626\u062f\u0629\nHost Community\nReturnees"
+  },
+  {
+   "depends_on": "eval:doc.\r\nplacestatus\r\n== \"IDP/\u0646\u0627\u0632\u062d\u0629\"; ",
+   "fieldname": "hisplace",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0625\u0642\u0627\u0645\u0629 \u0627\u0644\u0623\u0635\u0644\u064a"
+  },
+  {
+   "fieldname": "femaleheaded",
+   "fieldtype": "Autocomplete",
+   "label": "\u0639\u0627\u0626\u0644\u0629 \u062a\u0639\u064a\u0644\u0647\u0627 \u0623\u0646\u062b\u0649",
+   "options": "\nNo/ \u0644\u0627\nYes/ \u0646\u0639\u0645"
+  },
+  {
+   "fieldname": "hascard",
+   "fieldtype": "Autocomplete",
+   "label": "\u064a\u0645\u062a\u0644\u0643 \u0628\u0637\u0627\u0642\u0629 \u0625\u0639\u0627\u0642\u0629",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "typedisability",
+   "fieldtype": "Autocomplete",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0625\u0639\u0627\u0642\u0629",
+   "options": "\nCerebral Palsy \u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u062f\u0645\u0627\u063a\u064a\nProfound intellectual disabilities\u00a0\u00a0\u00a0 \u0627\u0644\u0627\u0639\u0627\u0642\u0627\u062a \u0627\u0644\u0639\u0642\u0644\u064a\u0629 \u0627\u0644\u0639\u0645\u064a\u0642\u0629\nDown Syndrome\nQuadriplegia \u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0631\u0628\u0627\u0639\u064a\nMonoplegia \u0627\u0644\u0634\u0644\u0644 \u0627\u0644\u0623\u062d\u0627\u062f\u064a\nAutism \u0627\u0644\u062a\u0648\u062d\u062f\nFulll Blindness/ \u0639\u0645\u0649 \u0643\u0627\u0645\u0644\nSevere intellectual disabilities \u0627\u0644\u0627\u0639\u0627\u0642\u0627\u062a \u0627\u0644\u0639\u0642\u0644\u064a\u0629 \u0627\u0644\u0634\u062f\u064a\u062f\u0629\nFull Deafness/ \u0635\u0645\u0645 \u0643\u0627\u0645\u0644\nUpper Limb amputation \u0628\u062a\u0631 \u0627\u0644\u0637\u0631\u0641 \u0627\u0644\u0639\u0644\u0648\u064a- \u0645\u0646 \u0627\u0644\u0643\u0648\u0639\nlower Limb amputation \u0628\u062a\u0631 \u0627\u0644\u0637\u0631\u0641 \u0627\u0644\u0633\u0641\u0644\u064a- \u0645\u0646 \u0627\u0644\u0631\u0643\u0628\u0629\nSpinal Cord Diseases\u00a0\u00a0\u00a0 \u0623\u0645\u0631\u0627\u0636 \u0627\u0644\u0646\u062e\u0627\u0639 \u0627\u0644\u0634\u0648\u0643\u064a"
+  },
+  {
+   "fieldname": "causedisability",
+   "fieldtype": "Autocomplete",
+   "label": "\u0633\u0628\u0628 \u0627\u0644\u0625\u0639\u0627\u0642\u0629",
+   "options": "\nby birth/\u0628\u0627\u0644\u0648\u0644\u0627\u062f\u0629\ndue to conflict/ \u0628\u0633\u0628\u0628 \u0627\u0644\u062d\u0631\u0628\naccidents/ \u062d\u0627\u062f\u062b\nAutism \u0627\u0644\u062a\u0648\u062d\u062f\nacquired disease/\u0645\u0631\u0636 \u0645\u0643\u062a\u0633\u0628"
+  },
+  {
+   "fieldname": "educationstatuts",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u0648\u0636\u0639 \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a",
+   "options": "\nNo education/\u0644\u0627 \u064a\u062a\u0644\u0642\u0649 \u0627\u064a \u062a\u0639\u0644\u064a\u0645\nU6/ \u062a\u062d\u062a \u0627\u0644\u0633\u062a \u0633\u0646\u0648\u0627\u062a\nSpecialized education/\u064a\u062a\u0644\u0642\u0649 \u062a\u0639\u0644\u064a\u0645 \u0645\u062a\u062e\u0635\u0635\ngo to school/\u064a\u0630\u0647\u0628 \u0627\u0644\u0649 \u0627\u0644\u0645\u062f\u0631\u0633\u0629\nSpecilaized Education"
+  },
+  {
+   "depends_on": "eval:doc.\r\neducationstatuts\r\n== \"go to school/\u064a\u0630\u0647\u0628 \u0627\u0644\u0649 \u0627\u0644\u0645\u062f\u0631\u0633\u0629\" ;\r\n",
+   "fieldname": "atanyclass",
+   "fieldtype": "Autocomplete",
+   "label": "\u0641\u064a \u0623\u064a \u0635\u0641",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u0645\u0646\u0637\u0642\u0629",
+   "options": "\nDuma\nRural Damascus\nQatana\nYabroud\nAl Qutayfah\nDarayya\nAt Tall\nAz-Zabdani\nAn Nabk"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u0645\u062f\u064a\u0646\u0629/\u0627\u0644\u0642\u0631\u064a\u0629",
+   "length": 50,
+   "options": "\nHayajneh\nNofur\nHezzeh\nAshrafiet Sahnaya\nalhusaynia\nBabella\nEin Terma\nKisweh\nSaqba\nDarayya\nHjeireh\nSbeineh\nAdra al Jadidah\nJaramana\nJdidet Artuz\nMeraba\nOtayba\nNajha\nmaeis\nKhan Elshih\nMadamiyet Elsham\nMadaya\nQatana\nDuma\nSuq Wadi Barada\nZamalka\nAqraba\nGhizlaniyyeh\nAl Qutayfah\nKafr Batna\nThiyabiyeh\nYalda\nSahnaya\nDhameer\nQudsiya\nHseniyeh\nHarjal\nQarra\nNasriyeh (Jirud)\nHammura\nBeit Saber\nMonin\nBtihet Elwafedine\nObada\nKherbet Elward\nMaliha\nNew Dahiet Qdosiya Elsakina\nBeit Sawa\nBalaliyeh\nMisraba\nArtuz\nRaheiba\nJisrein\nMeidaa\nAdra\nSayyeda Zeinab\nMadamiyet Elqalmun\nAbu Qawooq\nBetima\nAshrafiet Elwadi\nKhan Danoun\nZamaniyeh\nBzeineh\nBeit Sahm\num elawamid\n\u0627\u0644\u0628\u0648\u064a\u0636\u0629\nDimas\nRamadan (Non-Official Pr Camp)\nModira\nDeir Maqran\nHzrma\n\u0627\u0644\u0628\u0627\u0631\u062f\u0629\nOtaya\nHerfa\nMqeilibeh\nSa'sa'\nBahdaliya\nAt Tall\nDeir Attiyeh\nShabaa\nKanaker (Sa'sa')\nNashabiyeh\nZakyeh\nQara\nJdidet Elwadi\nDeir Khabiyeh\nJdidet Elkhas\nMorjana (Kisweh)\nHaran Al'awameed\nJirud\nArbin\nDeir Ali\nDahiet Elasad\nBayad (Ghizlaniyyeh)\nHarasta\nDarwasheh\nRawda Batroneh\nJarba\nQasemiyeh (Nashabiyeh)\nAdleiyeh\nAn Nabk\nQarra (Deir Attiyeh)\nRas Elmaarra\nHosh Eldawahreh\nQatana,\nAhmadia (Nashabiyeh)\nMadinet Elshahid Basil Elasad Alomaliyeh Baadra\nDeir Maker\nHosh Sahya\nMbarka\nRas El Ein - Yabrud\nLower Hfeir\nUpper Hfeir\nAz-Zabdani\nHorayra\nDuma (Duma)\nAtna\nYafur\nTwani\nRihan\nQisa\nGhassuleh\nKafrquq\nShaqhab\nBahariya\nMashrafet Falita\nBseimeh\nBeja\nDeir Qanun\nHteitet Elturkman\nHosh Nasri\nYabroud\nSaada\n\u0645\u062e\u064a\u0645 \u0627\u0644\u0648\u0627\u0641\u062f\u064a\u0646\nMaaruna"
+  },
+  {
+   "fieldname": "column_break_letij",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "recipientname1",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u0644\u0645 1"
+  },
+  {
+   "fieldname": "relativerelation",
+   "fieldtype": "Autocomplete",
+   "label": "\u0635\u0644\u0629 \u0627\u0644\u0642\u0631\u0627\u0628\u0629",
+   "options": "\nMother/\u0627\u0644\u0623\u0645\nFather/ \u0627\u0644\u0627\u0628\n\u0632\u0648\u062c\u0629 \u0627\u0644\u0623\u0628\n\u0627\u0644\u062c\u062f\nSibling/ \u0634\u0642\u064a\u0642(\u0629)\nUncle/ \u0639\u0645 \u0627\u0648 \u062e\u0627\u0644\nGrandfather/ \u0627\u0644\u062c\u062f\nAunt/ \u0639\u0645\u0629 \u0623\u0648 \u062e\u0627\u0644\u0629\n\u0627\u0644\u0623\u062e\nGrandmother/\u0627\u0644\u062c\u062f\u0629"
+  },
+  {
+   "fieldname": "idrn1",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0631\u0642\u0645 \u0627\u0644\u0648\u0637\u0646\u064a 1"
+  },
+  {
+   "fieldname": "phonern1",
+   "fieldtype": "Data",
+   "label": "\u062c\u0648\u0627\u0644 \u0627\u0644\u0645\u0633\u062a\u0644\u0645 1",
+   "length": 10
+  },
+  {
+   "fieldname": "recipientname2",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0633\u062a\u0644\u0645 2"
+  },
+  {
+   "fieldname": "idrn2",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0631\u0642\u0645 \u0627\u0644\u0648\u0637\u0646\u064a 2"
+  },
+  {
+   "fieldname": "phonern2",
+   "fieldtype": "Data",
+   "label": "\u062c\u0648\u0627\u0644 \u0627\u0644\u0645\u0633\u062a\u0644\u0645 2",
+   "length": 10
+  },
+  {
+   "fieldname": "caregiver",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0645\u0642\u062f\u0645 \u0627\u0644\u0631\u0639\u0627\u064a\u0629"
+  },
+  {
+   "fieldname": "idcard",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0628\u0637\u0627\u0642\u0629 \u0627\u0644\u0625\u0639\u0627\u0642\u0629"
+  },
+  {
+   "fieldname": "evidencedisabilty",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u062b\u0628\u0627\u062a\u0627\u062a \u0627\u0644\u0625\u0639\u0627\u0642\u0629",
+   "options": "\nDisability Card\nMedical Report"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u0646\u0627\u062d\u064a\u0629",
+   "options": "\nGhizlaniyyeh\nSa'sa'\nKafr Batna\nSahnaya\nBabella\nKisweh\nMarkaz Darayya\nDuma\nJaramana\nQatana\nAt Tall\nNashabiyeh\nMadaya\nAz-Zabdani\nArbin\nAl Qutayfah\nDhameer\nQudsiya\nDeir Attiyeh\nJirud\nMaliha\nHarasta\nRaheiba\nDimas\nEin Elfijeh\nBait Jan\nHaran Al'awameed\nDarayya\nAn Nabk\nYabroud\nQatana,\nSidnaya"
+  },
+  {
+   "fieldname": "tb_city2",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u0645\u062f\u064a\u0646\u0629 2",
+   "length": 90,
+   "options": "\nHayajneh, Rural Damascus\\\u0627\u0644\u0647\u064a\u062c\u0627\u0646\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nNofur, Rural Damascus\\\u0627\u0644\u0646\u0641\u0648\u0631, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHezzeh, Rural Damascus\\\u062d\u0632\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAshrafiet Sahnaya, Rural Damascus\\\u0623\u0634\u0631\u0641\u064a\u0629 \u0635\u062d\u0646\u0627\u064a\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nSayyeda Zeinab, Rural Damascus\\\u0627\u0644\u0633\u064a\u062f\u0629 \u0632\u064a\u0646\u0628, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBabella, Rural Damascus\\\u0628\u0628\u064a\u0644\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nEin Terma, Rural Damascus\\\u0639\u064a\u0646 \u062a\u0631\u0645\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAdra, Rural Damascus\\\u0639\u062f\u0631\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nSaqba, Rural Damascus\\\u0633\u0642\u0628\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDarayya, Rural Damascus\\\u062f\u0627\u0631\u064a\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHjeireh, Rural Damascus\\\u062d\u062c\u064a\u0631\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nSbeineh, Rural Damascus\\\u0627\u0644\u0633\u0628\u064a\u0646\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nJaramana, Rural Damascus\\\u062c\u0631\u0645\u0627\u0646\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nJdidet Artuz, Rural Damascus\\\u062c\u062f\u064a\u062f\u0629 \u0639\u0631\u0637\u0648\u0632, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMeraba, Rural Damascus\\\u0645\u0639\u0631\u0628\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nOtayba, Rural Damascus\\\u0627\u0644\u0639\u062a\u064a\u0628\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nNajha, Rural Damascus\\\u0646\u062c\u0647\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nSa'sa', Rural Damascus\\\u0633\u0639\u0633\u0639, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nQudsiya, Rural Damascus\\\u0642\u062f\u0633\u064a\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMadamiyet Elsham, Rural Damascus\\\u0645\u0639\u0636\u0645\u064a\u0629 \u0627\u0644\u0634\u0627\u0645, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMadaya, Rural Damascus\\\u0645\u0636\u0627\u064a\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nQatana, Rural Damascus\\\u0642\u0637\u0646\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDuma, Rural Damascus\\\u062f\u0648\u0645\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nSuq Wadi Barada, Rural Damascus\\\u0633\u0648\u0642 \u0648\u0627\u062f\u064a \u0628\u0631\u062f\u0649, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nZamalka, Rural Damascus\\\u0632\u0645\u0644\u0643\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAqraba, Rural Damascus\\\u0639\u0642\u0631\u0628\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nGhizlaniyyeh, Rural Damascus\\\u0627\u0644\u063a\u0632\u0644\u0627\u0646\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAl Qutayfah, Rural Damascus\\\u0627\u0644\u0642\u0637\u064a\u0641\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nKafr Batna, Rural Damascus\\\u0643\u0641\u0631 \u0628\u0637\u0646\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nThiyabiyeh, Rural Damascus\\\u0627\u0644\u0630\u064a\u0627\u0628\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nYalda, Rural Damascus\\\u064a\u0644\u062f\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nSahnaya, Rural Damascus\\\u0635\u062d\u0646\u0627\u064a\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDhameer, Rural Damascus\\\u0627\u0644\u0636\u0645\u064a\u0631, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHseniyeh, Rural Damascus\\\u0627\u0644\u062d\u0633\u064a\u0646\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHarjal, Rural Damascus\\\u0627\u0644\u062d\u0631\u062c\u0644\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nQarra, Rural Damascus\\\u0642\u0627\u0631\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nJirud, Rural Damascus\\\u062c\u064a\u0631\u0648\u062f, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHammura, Rural Damascus\\\u062d\u0645\u0648\u0631\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBeit Saber, Rural Damascus\\\u0628\u064a\u062a \u0633\u0627\u0628\u0631, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMonin, Rural Damascus\\\u0645\u0646\u064a\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBtihet Elwafedine, Rural Damascus\\\u0628\u0637\u064a\u062d\u0629 \u0627\u0644\u0648\u0627\u0641\u062f\u064a\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nObada, Rural Damascus\\\u0627\u0644\u0639\u0628\u0627\u062f\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nKherbet Elward, Rural Damascus\\\u062e\u0631\u0628\u0629 \u0627\u0644\u0648\u0631\u062f, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMaliha, Rural Damascus\\\u0627\u0644\u0645\u0644\u064a\u062d\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nNew Dahiet Qdosiya Elsakina, Rural Damascus\\\u0636\u0627\u062d\u064a\u0629 \u0642\u062f\u0633\u064a\u0627 \u0627\u0644\u0633\u0643\u0646\u064a\u0629 \u0627\u0644\u062c\u062f\u064a\u062f\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBeit Sawa, Rural Damascus\\\u0628\u064a\u062a \u0633\u0648\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBalaliyeh, Rural Damascus\\\u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0644\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMisraba, Rural Damascus\\\u0645\u0633\u0631\u0627\u0628\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nArtuz, Rural Damascus\\\u0639\u0631\u0637\u0648\u0632, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nRaheiba, Rural Damascus\\\u0627\u0644\u0631\u062d\u064a\u0628\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nJisrein, Rural Damascus\\\u062c\u0633\u0631\u064a\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMeidaa, Rural Damascus\\\u0645\u064a\u062f\u0639\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nKisweh, Rural Damascus\\\u0627\u0644\u0643\u0633\u0648\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMadamiyet Elqalmun, Rural Damascus\\\u0645\u0639\u0636\u0645\u064a\u0629 \u0627\u0644\u0642\u0644\u0645\u0648\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBahdaliya, Rural Damascus\\\u0627\u0644\u0628\u062d\u062f\u0644\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAbu Qawooq, Rural Damascus\\\u0623\u0628\u0648 \u0642\u0627\u0648\u0648\u0642, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBetima, Rural Damascus\\\u0628\u064a\u062a\u064a\u0645\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBitariyeh, Rural Damascus\\\u0627\u0644\u0628\u064a\u0637\u0627\u0631\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAshrafiet Elwadi, Rural Damascus\\\u0623\u0634\u0631\u0641\u064a\u0629 \u0627\u0644\u0648\u0627\u062f\u064a, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nKhan Danoun, Rural Damascus\\\u062e\u0627\u0646 \u062f\u0646\u0648\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nZamaniyeh, Rural Damascus\\\u0627\u0644\u0632\u0645\u0627\u0646\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBzeineh, Rural Damascus\\\u0628\u0632\u064a\u0646\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBeit Sahm, Rural Damascus\\\u0628\u064a\u062a \u0633\u062d\u0645, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nUm Elawamid, Rural Damascus\\\u0623\u0645 \u0627\u0644\u0639\u0648\u0627\u0645\u064a\u062f, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\n\u0627\u0644\u0628\u0648\u064a\u0636\u0629\nDimas, Rural Damascus\\\u0627\u0644\u062f\u064a\u0645\u0627\u0633, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nRamadan (Non-Official Pr Camp), Rural Damascus\\\u0645\u062e\u064a\u0645 \u0627\u0644\u0631\u0645\u062f\u0627\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nModira, Rural Damascus\\\u0645\u062f\u064a\u0631\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDeir Maqran\nHzrma, Rural Damascus\\\u062d\u0632\u0631\u0645\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nOtaya, Rural Damascus\\\u0623\u0648\u062a\u0627\u064a\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHerfa, Rural Damascus\\\u062d\u0631\u0641\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMqeilibeh, Rural Damascus\\\u0645\u0642\u064a\u0644\u064a\u0628\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nNasriyeh, Rural Damascus\\\u0627\u0644\u0646\u0627\u0635\u0631\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAt Tall, Rural Damascus\\\u0627\u0644\u062a\u0644, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAl-Hama, Rural Damascus\\\u0627\u0644\u0647\u0627\u0645\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDeir Attiyeh, Rural Damascus\\\u062f\u064a\u0631 \u0639\u0637\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nShabaa, Rural Damascus\\\u0634\u0628\u0639\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nKanaker, Rural Damascus\\\u0643\u0646\u0627\u0643\u0631, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nNashabiyeh, Rural Damascus\\\u0627\u0644\u0646\u0634\u0627\u0628\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nQara, Rural Damascus\\\u0642\u0627\u0631\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nJdidet Elwadi, Rural Damascus\\\u062c\u062f\u064a\u062f\u0629 \u0627\u0644\u0648\u0627\u062f\u064a, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDeir Khabiyeh, Rural Damascus\\\u062f\u064a\u0631\u062e\u0628\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nJdidet Elkhas, Rural Damascus\\\u062c\u062f\u064a\u062f\u0629 \u0627\u0644\u062e\u0627\u0635, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMorjana, Rural Damascus\\\u0645\u0631\u062c\u0627\u0646\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHaran Al'awameed, Rural Damascus\\\u062d\u0631\u0627\u0646 \u0627\u0644\u0639\u0648\u0627\u0645\u064a\u062f, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nZakyeh, Rural Damascus\\\u0632\u0627\u0643\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nArbin, Rural Damascus\\\u0639\u0631\u0628\u064a\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDeir Ali, Rural Damascus\\\u062f\u064a\u0631 \u0639\u0644\u064a, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDahiet Elasad, Rural Damascus\\\u0636\u0627\u062d\u064a\u0629 \u0627\u0644\u0623\u0633\u062f, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBayad, Rural Damascus\\\u0627\u0644\u0628\u064a\u0627\u0636, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHarasta, Rural Damascus\\\u062d\u0631\u0633\u062a\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDarayya\nRawda Batroneh, Rural Damascus\\\u0627\u0644\u0631\u0648\u0636\u0629_\u0627\u0644\u0628\u0637\u0631\u0648\u0646\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nJarba, Rural Damascus\\\u0627\u0644\u062c\u0631\u0628\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nQasemiyeh, Rural Damascus\\\u0627\u0644\u0642\u0627\u0633\u0645\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAdleiyeh, Rural Damascus\\\u0627\u0644\u0639\u0627\u062f\u0644\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAn Nabk, Rural Damascus\\\u0627\u0644\u0646\u0628\u0643, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHmeireh, Rural Damascus\\\u0627\u0644\u062d\u0645\u064a\u0631\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHosh Elsultan, Rural Damascus\\\u062d\u0648\u0634 \u0627\u0644\u0633\u0644\u0637\u0627\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nRas Elmaarra, Rural Damascus\\\u0631\u0623\u0633 \u0627\u0644\u0645\u0639\u0631\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHosh Eldawahreh, Rural Damascus\\\u062d\u0648\u0634 \u0627\u0644\u0636\u0648\u0627\u0647\u0631\u0647, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAhmadia, Rural Damascus\\\u0627\u0644\u0623\u062d\u0645\u062f\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDeir Maqran, Rural Damascus\\\u062f\u064a\u0631 \u0645\u0642\u0631\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMadinet Elshahid Basil Elasad Alomaliyeh Baadra\nDeir Maker, Rural Damascus\\\u062f\u064a\u0631 \u0645\u0627\u0643\u0631, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHosh Sahya, Rural Damascus\\\u062d\u0648\u0634 \u0635\u0647\u064a\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAdra al Jadidah, Rural Damascus\\\u0639\u062f\u0631\u0627 \u0627\u0644\u062c\u062f\u064a\u062f\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMbarka, Rural Damascus\\\u0627\u0644\u0645\u0628\u0627\u0631\u0643\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nRas El Ein - Yabrud, Rural Damascus\\\u0631\u0623\u0633 \u0627\u0644\u0639\u064a\u0646 - \u064a\u0628\u0631\u0648\u062f, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nLower Hfeir, Rural Damascus\\\u062d\u0641\u064a\u0631 \u0627\u0644\u062a\u062d\u062a\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nUpper Hfeir, Rural Damascus\\\u062d\u0641\u064a\u0631 \u0627\u0644\u0641\u0648\u0642\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAz-Zabdani, Rural Damascus\\\u0627\u0644\u0632\u0628\u062f\u0627\u0646\u064a, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHorayra, Rural Damascus\\\u0647\u0631\u064a\u0631\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nAtna, Rural Damascus\\\u0627\u0644\u0639\u0637\u0646\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nYafur, Rural Damascus\\\u064a\u0639\u0641\u0648\u0631, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nTwani, Rural Damascus\\\u0627\u0644\u062a\u0648\u0627\u0646\u064a, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nRihan, Rural Damascus\\\u0627\u0644\u0631\u064a\u062d\u0627\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nQisa, Rural Damascus\\\u0627\u0644\u0642\u064a\u0633\u0627, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nGhassuleh, Rural Damascus\\\u063a\u0633\u0648\u0644\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nKafrquq, Rural Damascus\\\u0643\u0641\u0631\u0642\u0648\u0642, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nShaqhab, Rural Damascus\\\u0634\u0642\u062d\u0628, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBahariya, Rural Damascus\\\u0627\u0644\u0628\u062d\u0627\u0631\u064a\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMashrafet Falita, Rural Damascus\\\u0645\u0634\u0631\u0641\u0629 \u0641\u0644\u064a\u0637\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nBseimeh, Rural Damascus\\\u0628\u0633\u064a\u0645\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDeir Qanun, Rural Damascus\\\u062f\u064a\u0631 \u0642\u0627\u0646\u0648\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHteitet Elturkman, Rural Damascus\\\u062d\u062a\u064a\u062a\u0629 \u0627\u0644\u062a\u0631\u0643\u0645\u0627\u0646, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nHosh Nasri, Rural Damascus\\\u062d\u0648\u0634 \u0646\u0635\u0631\u064a, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nSaada, Rural Damascus\\\u0627\u0644\u0633\u0639\u0627\u062f\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nMansura, Rural Damascus\\\u0627\u0644\u0645\u0646\u0635\u0648\u0631\u0629, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\n\u0645\u062e\u064a\u0645 \u0627\u0644\u0648\u0627\u0641\u062f\u064a\u0646\nmaaruna\n\u0627\u0644\u0635\u0628\u0648\u0631\u0629\nJisrein\nBeja, Rural Damascus\\\u0627\u0644\u0628\u062c\u0627\u0639, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nYabroud, Rural Damascus\\\u064a\u0628\u0631\u0648\u062f, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nDarwasheh, Rural Damascus\\\u062f\u0631\u0648\u0634\u0647, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642\nKhan Elshih, Rural Damascus\\\u062e\u0627\u0646 \u0627\u0644\u0634\u064a\u062d, \u0631\u064a\u0641 \u062f\u0645\u0634\u0642"
+  },
+  {
+   "fieldname": "neighborhood",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u062d\u064a"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0639\u0646\u0648\u0627\u0646"
+  },
+  {
+   "fieldname": "section_break_etnzz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notecasemanager",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0645\u062f\u064a\u0631 \u0627\u0644\u062d\u0627\u0644\u0629"
+  },
+  {
+   "fieldname": "notesupervisor",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0645\u062f\u0642\u0642"
+  },
+  {
+   "fieldname": "manager_note",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0645\u062f\u064a\u0631",
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.\r\nrole\r\n!==\r\n\"123\";"
+  },
+  {
+   "fieldname": "tab_break_gelcc",
+   "fieldtype": "Tab Break",
+   "label": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0627\u0644\u0623\u0633\u0631\u0629"
+  },
+  {
+   "fieldname": "mothername",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0623\u0645 \u0627\u0644\u062b\u0644\u0627\u062b\u064a"
+  },
+  {
+   "fieldname": "mothercondition",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u0648\u0636\u0639 \u0627\u0644\u062d\u0627\u0644\u0629 \u0644\u0644\u0623\u0645",
+   "options": "\n\u0644\u0627 \u062a\u062a\u0648\u0641\u0631 \u0645\u0639\u0644\u0648\u0645\u0627\u062a\n\u0639\u0644\u0649 \u0642\u064a\u062f \u0627\u0644\u062d\u064a\u0627\u0629\n\u0645\u062a\u0648\u0641\u064a/\u0629\n\u0645\u0646\u0641\u0635\u0644/\u0629"
+  },
+  {
+   "fieldname": "motherage",
+   "fieldtype": "Date",
+   "label": "\u0645\u0648\u0627\u0644\u064a\u062f \u0627\u0644\u0623\u0645"
+  },
+  {
+   "fieldname": "motherwork",
+   "fieldtype": "Data",
+   "label": "\u0639\u0645\u0644 \u0627\u0644\u0623\u0645"
+  },
+  {
+   "fieldname": "motherphone",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u062c\u0648\u0627\u0644 \u0627\u0644\u0623\u0645",
+   "length": 10
+  },
+  {
+   "fieldname": "column_break_h3xmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fathername",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0623\u0628 \u0627\u0644\u062b\u0644\u0627\u062b\u064a"
+  },
+  {
+   "fieldname": "fathercondition",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u0648\u0636\u0639 \u0627\u0644\u062d\u0627\u0644\u064a \u0644\u0644\u0623\u0628",
+   "options": "\n\u0644\u0627 \u062a\u062a\u0648\u0641\u0631 \u0645\u0639\u0644\u0648\u0645\u0627\u062a\n\u0639\u0644\u0649 \u0642\u064a\u062f \u0627\u0644\u062d\u064a\u0627\u0629\n\u0645\u062a\u0648\u0641\u064a/\u0629\n\u0645\u0646\u0641\u0635\u0644/\u0629"
+  },
+  {
+   "fieldname": "fatherage",
+   "fieldtype": "Date",
+   "label": "\u0645\u0648\u0627\u0644\u064a\u062f \u0627\u0644\u0623\u0628"
+  },
+  {
+   "fieldname": "workfather",
+   "fieldtype": "Data",
+   "label": "\u0639\u0645\u0644 \u0627\u0644\u0623\u0628"
+  },
+  {
+   "fieldname": "fatherphone",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u062c\u0648\u0627\u0644 \u0627\u0644\u0623\u0628",
+   "length": 10
+  },
+  {
+   "fieldname": "section_break_er9qw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "familymember",
+   "fieldtype": "Table",
+   "label": "\u0623\u0641\u0631\u062f \u0627\u0644\u0623\u0633\u0631\u0629 \u063a\u064a\u0631 \u0627\u0644\u0645\u0630\u0643\u0648\u0631\u064a\u0646",
+   "options": "FamilyTable"
+  },
+  {
+   "fieldname": "section_break_no6or",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "familycondition",
+   "fieldtype": "Small Text",
+   "label": "\u062a\u0643\u0648\u064a\u0646 \u0627\u0644\u0623\u0633\u0631\u0629/\u0627\u0644\u0648\u0636\u0639 \u0627\u0644\u0645\u0639\u064a\u0634\u064a/\u0645\u0645\u062a\u0644\u0643\u0627\u062a \u0627\u0644\u0623\u0633\u0631\u0629"
+  },
+  {
+   "fieldname": "familyhouse",
+   "fieldtype": "Small Text",
+   "label": "\u0638\u0631\u0648\u0641 \u0627\u0644\u0633\u0643\u0646/\u0627\u0644\u0639\u0644\u0627\u0642\u0627\u062a \u0627\u0644\u0625\u0634\u0643\u0627\u0644\u064a\u0629/\u0627\u0644\u0638\u0631\u0648\u0641 \u0627\u0644\u0635\u062d\u064a\u0629"
+  },
+  {
+   "fieldname": "otherinformation",
+   "fieldtype": "Tab Break",
+   "label": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0623\u062e\u0631\u0649"
+  },
+  {
+   "fieldname": "whogivecarde",
+   "fieldtype": "Data",
+   "label": "\u0628\u0637\u0627\u0642\u0629 \u0627\u0644\u0625\u0639\u0627\u0642\u0629 \u0635\u0627\u062f\u0631\u0629 \u0639\u0646"
+  },
+  {
+   "fieldname": "childplacebirth",
+   "fieldtype": "Data",
+   "label": "\u0645\u062d\u0644 \u0648\u0644\u0627\u062f\u0629 \u0627\u0644\u0637\u0641\u0644"
+  },
+  {
+   "fieldname": "disiabiltyoncard",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0625\u0639\u0627\u0642\u0629 \u0639\u0644\u0649 \u0627\u0644\u0628\u0637\u0627\u0642\u0629"
+  },
+  {
+   "fieldname": "disabiltyexplain",
+   "fieldtype": "Data",
+   "label": "\u0634\u0631\u062d \u0627\u0644\u0625\u0639\u0627\u0642\u0629"
+  },
+  {
+   "fieldname": "severe",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0634\u062f\u0629"
+  },
+  {
+   "fieldname": "needhelp",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u062d\u0627\u062c\u0629 \u0625\u0644\u0649 \u0645\u0631\u0627\u0641\u0642",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "grantdate",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0645\u0646\u062d"
+  },
+  {
+   "fieldname": "column_break_qb2qc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "visitcheck",
+   "fieldtype": "Check",
+   "label": "\u0632\u064a\u0627\u0631\u0629 \u062a\u062d\u0642\u0642"
+  },
+  {
+   "default": "0",
+   "fieldname": "informed",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0645\u0648\u0627\u0641\u0642\u0629 \u0627\u0644\u0645\u0633\u062a\u0646\u064a\u0631\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "caseevaluate",
+   "fieldtype": "Check",
+   "label": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u062d\u0627\u0644\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "intervention",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u062a\u062f\u062e\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "referrals",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0625\u062d\u0627\u0644\u0627\u062a"
+  },
+  {
+   "default": "0",
+   "fieldname": "review",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "close",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0625\u063a\u0644\u0627\u0642"
+  },
+  {
+   "fieldname": "reasonclose",
+   "fieldtype": "Data",
+   "label": "\u0633\u0628\u0628 \u0627\u0644\u0625\u063a\u0644\u0627\u0642"
+  },
+  {
+   "fieldname": "dateclose",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0625\u063a\u0644\u0627\u0642"
+  },
+  {
+   "fieldname": "column_break_hgthq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "form0",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 0"
+  },
+  {
+   "default": "0",
+   "fieldname": "form1",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "form2",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 2"
+  },
+  {
+   "default": "0",
+   "fieldname": "form3",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 3"
+  },
+  {
+   "default": "0",
+   "fieldname": "form4",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 4"
+  },
+  {
+   "default": "0",
+   "fieldname": "form5",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 5"
+  },
+  {
+   "default": "0",
+   "fieldname": "form6",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 6"
+  },
+  {
+   "default": "0",
+   "fieldname": "form7",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 7"
+  },
+  {
+   "default": "0",
+   "fieldname": "form8",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 8"
+  },
+  {
+   "default": "0",
+   "fieldname": "form9",
+   "fieldtype": "Check",
+   "label": "\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0629 9"
+  },
+  {
+   "fieldname": "section_break_2wohk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "story",
+   "fieldtype": "Check",
+   "label": "\u0642\u0635\u0629 \u0646\u062c\u0627\u062d"
+  },
+  {
+   "fieldname": "addfile",
+   "fieldtype": "Attach",
+   "label": "\u0627\u0631\u0641\u0627\u0642 \u0645\u0644\u0641"
+  },
+  {
+   "fieldname": "section_break_ljfos",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note_on_close",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0631\u0627\u062a \u0648\u0627\u0644\u0625\u063a\u0644\u0627\u0642"
+  },
+  {
+   "fieldname": "protection",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062d\u0645\u0627\u064a\u0629"
+  },
+  {
+   "fieldname": "pro_explain",
+   "fieldtype": "Small Text",
+   "label": "\u0634\u0631\u062d \u0639\u0646 \u0642\u0636\u064a\u0629 \u0627\u0644\u062d\u0645\u0627\u064a\u0629"
+  },
+  {
+   "fieldname": "column_break_mtm1m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_physical",
+   "fieldtype": "Check",
+   "label": "\u0639\u0646\u0641/\u0633\u0648\u0621 \u0645\u0639\u0627\u0645\u0644\u0629 \u062c\u0633\u062f\u064a\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_psycho",
+   "fieldtype": "Check",
+   "label": "\u0639\u0646\u0641/\u0633\u0648\u0621 \u0645\u0639\u0627\u0645\u0644\u0629 \u0646\u0641\u0633\u064a\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_rape",
+   "fieldtype": "Check",
+   "label": "\u0627\u063a\u062a\u0635\u0627\u0628"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_pregnant",
+   "fieldtype": "Check",
+   "label": "\u062d\u0645\u0644 \u0627\u0644\u0623\u0637\u0641\u0627\u0644 \u0646\u062a\u064a\u062c\u0629 \u0627\u0644\u0627\u0639\u062a\u062f\u0627\u0621"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_sexual",
+   "fieldtype": "Check",
+   "label": "\u0639\u0646\u0641/\u0633\u0648\u0621 \u0645\u0639\u0627\u0645\u0644\u0629 \u062c\u0646\u0633\u064a\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_boom",
+   "fieldtype": "Check",
+   "label": "\u0637\u0641\u0644 \u0646\u0627\u062c \u0645\u0646 \u0627\u0644\u0630\u062e\u0627\u0626\u0631 \u0627\u0644\u0645\u062a\u0641\u062c\u0631\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_marry",
+   "fieldtype": "Check",
+   "label": "\u0632\u0648\u0627\u062c \u0623\u0637\u0641\u0627\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_bullying",
+   "fieldtype": "Check",
+   "label": "\u062a\u0646\u0645\u0631"
+  },
+  {
+   "fieldname": "column_break_cw4h6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_neglecting",
+   "fieldtype": "Check",
+   "label": "\u0625\u0647\u0645\u0627\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_drop_out",
+   "fieldtype": "Check",
+   "label": "\u062a\u0633\u0631\u0628"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_labour",
+   "fieldtype": "Check",
+   "label": "\u0639\u0645\u0627\u0644\u0629"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_nonexsit",
+   "fieldtype": "Check",
+   "label": "\u063a\u064a\u0631 \u0645\u0633\u062c\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_street",
+   "fieldtype": "Check",
+   "label": "\u0623\u0637\u0641\u0627\u0644 \u0634\u0648\u0627\u0631\u0639"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_trade",
+   "fieldtype": "Check",
+   "label": "\u062a\u062c\u0627\u0631\u0629 \u0628\u0627\u0644\u0623\u0637\u0641\u0627\u0644"
+  },
+  {
+   "default": "0",
+   "fieldname": "v_poor",
+   "fieldtype": "Check",
+   "label": "\u0641\u0642\u0631"
+  },
+  {
+   "fieldname": "section_break_mcjjw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "is_he_married",
+   "fieldtype": "Autocomplete",
+   "label": "\u0647\u0644 \u0627\u0644\u0646\u0627\u062c\u064a \u0645\u062a\u0632\u0648\u062c",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "what_care",
+   "fieldtype": "Autocomplete",
+   "label": "\u062a\u0631\u062a\u064a\u0628\u0627\u062a \u0627\u0644\u0631\u0639\u0627\u064a\u0629",
+   "options": "\n\u0623\u0633\u0631\u0629 \u064a\u0639\u064a\u0644\u0647\u0627 \u0637\u0641\u0644\n\u0627\u0644\u0623\u062e/\u0627\u0644\u0623\u062e\u062a \u0627\u0644\u0628\u0627\u0644\u063a\u0629\n\u0627\u0644\u0639\u0627\u0626\u0644\u0629 \u0627\u0644\u0645\u0645\u062a\u062f\u0629\n\u0627\u0644\u0648\u0627\u0644\u062f\u064a\u0646 (\u0623\u0648 \u0623\u062d\u062f\u0647\u0645\u0627)\n\u062a\u0628\u0646\u064a\n\u0631\u0639\u0627\u064a\u0629 \u0633\u0643\u0646\u064a\u0629\n\u0632\u0648\u062c \u0627\u0644\u0623\u0628/\u0627\u0644\u0623\u0645\n\u0634\u062e\u0635 \u0628\u0627\u0644\u063a \u0645\u0646 \u063a\u064a\u0631 \u0627\u0644\u0623\u0642\u0631\u0628\u0627\u0621\n\u063a\u064a\u0631 \u0630\u0644\u0643\n\u0643\u0641\u0627\u0644\u0629\n\u0644\u0627\u062a\u0648\u062c\u062f \u062a\u0631\u062a\u064a\u0628\u0627\u062a \u0631\u0639\u0627\u064a\u0629\n\u064a\u0639\u064a\u0634 \u0645\u0633\u062a\u0642\u0644\u0627\u064b \u0648\u064a\u062a\u0644\u0642\u0649 \u0627\u0644\u062f\u0639\u0645"
+  },
+  {
+   "fieldname": "who_ref",
+   "fieldtype": "Autocomplete",
+   "label": "\u0627\u0644\u062c\u0647\u0629 \u0627\u0644\u0645\u062d\u064a\u0644\u0629",
+   "options": "\n\u0645\u0634\u0641\u0649\n\u0645\u062e\u0641\u0631\n\u063a\u064a\u0631 \u0630\u0644\u0643\n\u0635\u0627\u062d\u0628 \u0627\u0644\u0639\u0644\u0627\u0642\u0629\n\u062c\u0645\u0639\u064a\u0629\n\u0645\u062f\u064a\u0631\u064a\u0629 \u0627\u0644\u0634\u0624\u0648\u0646\n\u0627\u0644\u0627\u0634\u062e\u0627\u0635 \u0627\u0644\u0645\u0641\u062a\u0627\u062d\u064a\u064a\u0646 / \u0645\u062e\u062a\u0627\u0631 / \u0628\u0644\u062f\u064a\u0629\n\u0627\u0644\u0623\u0647\u0644\n\u0645\u0633\u062a\u0648\u0635\u0641\n\u0645\u062f\u064a\u0631 \u062d\u0627\u0644\u0629\n\u0627\u0644\u062c\u064a\u0631\u0627\u0646"
+  },
+  {
+   "fieldname": "name_ref",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u062c\u0647\u0629 \u0627\u0644\u0645\u062d\u064a\u0644\u0629"
+  },
+  {
+   "fieldname": "column_break_druxm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "orphan",
+   "fieldtype": "Autocomplete",
+   "label": "\u064a\u062a\u064a\u0645",
+   "options": "\n\u063a\u064a\u0631 \u0645\u0639\u0631\u0648\u0641\n\u064a\u062a\u064a\u0645 \u0627\u0644\u0623\u0645\n\u063a\u064a\u0631 \u064a\u062a\u064a\u0645\n\u064a\u062a\u064a\u0645 \u0627\u0644\u0623\u0628\n\u064a\u062a\u064a\u0645 \u0627\u0644\u0648\u0627\u0644\u062f\u064a\u0646"
+  },
+  {
+   "fieldname": "disable",
+   "fieldtype": "Autocomplete",
+   "label": "\u0625\u0639\u0627\u0642\u0629",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "phone_ref",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u062a\u0648\u0627\u0635\u0644 \u0627\u0644\u062c\u0647\u0629 \u0627\u0644\u0645\u062d\u064a\u0644\u0629",
+   "length": 10
+  },
+  {
+   "fieldname": "date_ref",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0625\u062d\u0627\u0644\u0629"
+  },
+  {
+   "fieldname": "section_break_qjfne",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type_date_v",
+   "fieldtype": "Table",
+   "label": "\u0646\u0648\u0639 \u0648\u062a\u0627\u0631\u064a\u062e \u0648\u0645\u0643\u0627\u0646 \u0627\u0644\u0627\u0639\u062a\u062f\u0627\u0621",
+   "options": "Pro1"
+  },
+  {
+   "fieldname": "section_break_8a7ge",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "emergency_intervention",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u062a\u062f\u062e\u0644 \u0627\u0644\u0637\u0627\u0631\u0626",
+   "options": "Pro2"
+  },
+  {
+   "fieldname": "referrals_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0627\u062d\u0627\u0644\u0627\u062a"
+  },
+  {
+   "fieldname": "referrals_table",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0627\u062d\u0627\u0644\u0627\u062a",
+   "options": "Ref"
+  },
+  {
+   "fieldname": "visits",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a"
+  },
+  {
+   "fieldname": "visits_table",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0632\u064a\u0627\u0631\u0627\u062a",
+   "options": "Visit"
+  },
+  {
+   "fieldname": "section_break_3t0r7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Attach",
+   "label": "\u062a\u0642\u0631\u064a\u0631 \u0634\u0627\u0645\u0644 \u0639\u0646 \u0627\u0644\u062d\u0627\u0644\u0629"
+  },
+  {
+   "fieldname": "money_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062d\u0648\u0627\u0644\u0627\u062a"
+  },
+  {
+   "fieldname": "section_break_2ncps",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "money_note",
+   "fieldtype": "Small Text",
+   "label": "\u0645\u0644\u0627\u062d\u0638\u0627\u062a \u0627\u0644\u062d\u0648\u0627\u0644\u0627\u062a"
+  },
+  {
+   "fieldname": "count_money",
+   "fieldtype": "Int",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u062d\u0648\u0627\u0644\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0644\u0645\u0629",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "sum_money",
+   "fieldtype": "Float",
+   "label": "\u0642\u064a\u0645\u0629 \u0627\u0644\u062d\u0648\u0627\u0644\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0644\u0645\u0629",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plan_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062e\u0637\u0629"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Table",
+   "label": "\u062e\u0637\u0629 \u0627\u0644\u062d\u0627\u0644\u0629",
+   "options": "Plan1"
+  },
+  {
+   "fieldname": "section_break_goi4s",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "needs",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0627\u062d\u062a\u064a\u0627\u062c\u0627\u062a \u0627\u0644\u0645\u0631\u0635\u0648\u062f\u0629",
+   "options": "Plan2"
+  },
+  {
+   "fieldname": "evaluate_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062a\u0642\u064a\u064a\u0645"
+  },
+  {
+   "fieldname": "ev_phyco",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0633\u0644\u0648\u0643\u064a \u0648\u0627\u0644\u0646\u0641\u0633\u064a"
+  },
+  {
+   "fieldname": "ev_love",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0635\u062d\u0629 \u0627\u0644\u0639\u0627\u0637\u0641\u064a\u0629 \u0648\u0627\u0644\u0634\u062e\u0635\u064a\u0629"
+  },
+  {
+   "fieldname": "ev_body",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0635\u062d\u0629 \u0627\u0644\u062c\u0633\u062f\u064a\u0629"
+  },
+  {
+   "fieldname": "ev_social",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a \u0627\u0644\u0627\u062c\u062a\u0645\u0627\u0639\u064a\u0629 \u0648\u0627\u0644\u062a\u0648\u0627\u0635\u0644"
+  },
+  {
+   "fieldname": "ev_education",
+   "fieldtype": "Small Text",
+   "label": "\u0627\u0644\u0635\u062d\u0629 \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a\u0629 \u0648\u0627\u0644\u0625\u062f\u0631\u0627\u0643\u064a\u0629"
+  },
+  {
+   "fieldname": "ev_doing",
+   "fieldtype": "Small Text",
+   "label": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0625\u0639\u062a\u0645\u0627\u062f \u0639\u0644\u0649 \u0646\u0641\u0633\u0647"
+  },
+  {
+   "fieldname": "ev_total",
+   "fieldtype": "Small Text",
+   "label": "\u062a\u0642\u064a\u064a\u0645 \u0634\u0627\u0645\u0644"
+  },
+  {
+   "fieldname": "casemanager",
+   "fieldtype": "Link",
+   "label": "\u0645\u062f\u064a\u0631 \u0627\u0644\u062d\u0627\u0644\u0629",
+   "options": "casemanager",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "\u0645\u062f\u0642\u0642 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a",
+   "options": "supervisor"
+  },
+  {
+   "fieldname": "money",
+   "fieldtype": "Table",
+   "options": "money"
+  }
+ ],
+ "image_field": "child_picture",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": " ",
+   "link_doctype": "Services",
+   "link_fieldname": "\u0627\u0644\u0645\u0646\u0637\u0642\u0629",
+   "table_fieldname": "\u0627\u0644\u062e\u062f\u0645\u0627\u062a"
+  },
+  {
+   "hidden": 1,
+   "link_doctype": "Company",
+   "link_fieldname": "company_name"
+  },
+  {
+   "group": " ",
+   "link_doctype": "KEY PEOPLE",
+   "link_fieldname": "ccity"
+  }
+ ],
+ "modified": "2023-10-09 18:12:32.844450",
+ "modified_by": "Administrator",
+ "module": "aqhc",
+ "name": "CASES",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_me",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0645\u062f\u064a\u0631 \u062d\u0627\u0644\u0629",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "\u0642\u0627\u0631\u0626"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "\u0645\u062f\u064a\u0631",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "idcase,childname",
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "\u0636\u0645\u0646"
+  },
+  {
+   "color": "Red",
+   "title": "\u062e\u0627\u0631\u062c \u0627\u0644\u0634\u0631\u0648\u0637"
+  },
+  {
+   "color": "Gray",
+   "title": "\u0644\u0644\u062a\u0631\u064a\u062b"
+  },
+  {
+   "color": "Pink",
+   "title": "\u0641\u0642\u062f\u0627\u0646 \u062a\u0648\u0627\u0635\u0644"
+  },
+  {
+   "color": "Purple",
+   "title": "\u0648\u0641\u0627\u0629"
+  }
+ ],
+ "title_field": "childname",
+ "track_changes": 1
+}
