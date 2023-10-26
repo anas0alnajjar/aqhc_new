@@ -163,6 +163,7 @@
   "section_break_goi4s",
   "needs",
   "evaluate_tab",
+  "\u062a\u0642\u064a\u064a\u0645_\u0627\u0644\u0634\u0647\u0631_\u0627\u0644\u0623\u0648\u0644_section",
   "ev_phyco",
   "ev_love",
   "ev_body",
@@ -1061,6 +1062,12 @@
    "fieldname": "money",
    "fieldtype": "Table",
    "options": "money"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "\u062a\u0642\u064a\u064a\u0645_\u0627\u0644\u0634\u0647\u0631_\u0627\u0644\u0623\u0648\u0644_section",
+   "fieldtype": "Section Break",
+   "label": "\u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0634\u0647\u0631 \u0627\u0644\u0623\u0648\u0644"
   }
  ],
  "image_field": "child_picture",
@@ -1078,7 +1085,7 @@
    "link_fieldname": "ccity"
   }
  ],
- "modified": "2023-10-21 02:31:36.720892",
+ "modified": "2023-10-25 06:21:29.958126",
  "modified_by": "Administrator",
  "module": "aqhc",
  "name": "CASES",
